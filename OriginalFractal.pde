@@ -1,30 +1,80 @@
 public void setup()
 {
-  size (500,500);
-  ellipseMode(CENTER);
-  
+  size (600,600);
 }
-  public void draw()
-  {
-    background (255);
-    stroke(2);
-    myFractal(250,250,480);
-    
-  }
+
+public void draw()
+{
+  fill (255,182,193);
+  //1st set
+  ellipse (300,100,200,200);
+  ellipse (200,150,200,200);
+  ellipse (400,150,200,200);
+  ellipse (150,200,200,200);
+  ellipse (450,200,200,200);
+  ellipse (100,300,200,200);
+  ellipse (500,300,200,200);
+  ellipse (150,400,200,200);
+  ellipse (450,400,200,200);
+  ellipse (200,450,200,200);
+  ellipse (400,450,200,200);
+  ellipse (300,500,200,200);
+  //2nd set
+  ellipse (300,150,200-25,200-25);
+  ellipse (200,200,200-25,200-25);
+  ellipse (400,200,200-25,200-25);
+  ellipse (150,250,200-25,200-25);
+  ellipse (450,250,200-25,200-25);
+  ellipse (150,325,200-25,200-25);
+  ellipse (450,325,200-25,200-25);
+  ellipse (200,375,200-25,200-25);
+  ellipse (400,375,200-25,200-25);
+ ellipse (300,450,200-25,200-25);
+ // 3
+  ellipse (300,200,200-50,200-50);
+  ellipse (220,250,200-50,200-50);
+  ellipse (400,250,200-50,200-50);
+  ellipse (180,300,200-50,200-50);
+  ellipse (420,300,200-50,200-50);
+  ellipse (220,350,200-50,200-50);
+  ellipse (380,350,200-50,200-50);
+ ellipse (300,400,200-50,200-50);
+ //4
+  ellipse (300,250,200-75,200-75);
+  ellipse (250,300,200-75,200-75);
+  ellipse (350,300,200-75,200-75);
+ ellipse (300,350,200-75,200-75);
+ /*5
+  ellipse (300,270,200-100,200-100);
+  ellipse (270,300,200-100,200-100);
+  ellipse (330,300,200-100,200-100);
+ ellipse (300,330,200-100,200-100);
+ */
+ //6
+ ellipse (300,270,200-125,200-125);
+  ellipse (270,300,200-125,200-125);
+  ellipse (330,300,200-125,200-125);
+ ellipse (300,330,200-125,200-125); 
+ /*7
+ ellipse (300,270,200-150,200-150);
+  ellipse (270,300,200-150,200-150);
+  ellipse (330,300,200-150,200-150);
+ ellipse (300,330,200-150,200-150);
+ */
+//8
+ellipse (300,290,200-125,200-125);
+  ellipse (285,300,200-125,200-125);
+  ellipse (315,300,200-125,200-125);
+ ellipse (300,310,200-125,200-125);
+ //9
+ //ellipse(
+ ellipse (300,290,200-120,200-120);
+  ellipse (290,305,200-120,200-120);
+  ellipse (310,305,200-120,200-120);
+ //ellipse (300,310,200-120,200-120);
+ //10
+ //ellipse( 300,300, 80,80);
+
   
-  public void myFractal(int x, int y, int siz)
-  {
-     fill((int)(Math.random()*256),(int)(Math.random()*256),(int)(Math.random()*256));
-    ellipse(x,y,siz,siz);
-    //ellipse(x*2, y*2,siz,siz);
-    //ellipse(x/2, y/2,siz,siz);
-    //ellipse(x*3, y*3,siz,siz);
-   // ellipse(x/3, y/3,siz,siz);
-    //ellipse(x*4, y*4,siz,siz);
-    //ellipse(x/4, y/4,siz,siz);
-    if(siz>1)
-    {
-      myFractal(x-siz/2,y,siz/2);
-      myFractal(x+siz/2,y,siz/2);
-    }
-  }
+ 
+}
